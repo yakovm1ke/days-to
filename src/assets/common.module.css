@@ -1,0 +1,77 @@
+.title {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	background-color: white;
+	border-radius: 8px 8px 0 0;
+	color: var(--background);
+	font-size: 2rem;
+}
+
+.icon {
+	margin-right: 0.2em;
+}
+
+.icon:hover {
+	cursor: pointer;
+}
+
+.backIcon {
+	composes: icon;
+	box-sizing: border-box;
+	padding: 0 6px;
+	background-color: var(--mainColor);
+	border-radius: 8px;
+	color: white;
+}
+
+.backIcon:hover {
+	animation-duration: 400ms;
+	animation-name: shuffle;
+}
+
+@keyframes shuffle {
+	from {
+		transform: rotate(0);
+	}
+
+	25% {
+		transform: rotate(15deg);
+	}
+
+	50% {
+		transform: rotate(-10deg);
+	}
+
+	75% {
+		transform: rotate(5deg);
+	}
+
+	to {
+		transform: rotate(0);
+	}
+}
+
+.button {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 2px solid var(--mainColor);
+	background-color: transparent;
+	border-radius: 8px;
+	color: inherit;
+}
+
+.button:hover {
+	background-color: var(--darkColor);
+	cursor: pointer;
+}
+
+.button:disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}

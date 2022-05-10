@@ -1,0 +1,67 @@
+.inputDate {
+	composes: transition from "@/assets/transition.module.css";
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.twoFields {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.input {
+	width: 100%;
+	box-sizing: border-box;
+	flex-basis: 250px;
+	flex-grow: 1;
+	padding: 8px;
+	border: 2px solid var(--mainColor);
+	background-color: transparent;
+	border-radius: 8px;
+	color: inherit;
+	font-family: inherit;
+	font-size: 1.5em;
+	outline: none;
+}
+
+.input:hover {
+	background-color: var(--darkColor);
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+	display: none;
+}
+
+.input:focus {
+	background-color: var(--darkColor);
+}
+
+.input::placeholder {
+	color: var(--placeholder);
+}
+
+.invalid {
+	border-color: var(--invalid);
+}
+
+.buttonTransition {
+	animation-duration: 400ms;
+	animation-name: transition;
+}
+
+.placeholder {
+	color: var(--placeholder);
+}
+
+@keyframes transition {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

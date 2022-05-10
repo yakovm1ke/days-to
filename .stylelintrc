@@ -1,0 +1,9 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-idiomatic-order"],
+  "rules": {
+    "custom-property-pattern": null,
+    "property-no-unknown": null,
+    "selector-class-pattern": null,
+    "indentation": "tab"
+  }
+}

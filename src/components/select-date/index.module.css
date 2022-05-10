@@ -1,0 +1,54 @@
+.selectDate {
+	composes: transition from "@/assets/transition.module.css";
+	display: flex;
+	flex-direction: column;
+}
+
+.selectArea {
+	display: flex;
+	max-height: 300px;
+	flex-direction: column;
+	padding: 20px;
+	border: 2px solid var(--darkColor);
+	border-top: none;
+	border-radius: 0 0 8px 8px;
+	gap: 10px;
+	overflow-y: scroll;
+}
+
+.selectArea::-webkit-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+
+.selectArea::-webkit-scrollbar-thumb {
+	background-color: white;
+	border-radius: 8px;
+}
+
+.date {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	align-items: center;
+	padding: 20px;
+	border: 2px solid var(--mainColor);
+	border-radius: 8px;
+	gap: 10px;
+}
+
+.date:hover {
+	background-color: var(--darkColor);
+	cursor: pointer;
+}
+
+.name {
+	overflow: hidden;
+	width: 100%;
+	text-overflow: ellipsis;
+}
+
+.dateValue {
+	text-align: end;
+}

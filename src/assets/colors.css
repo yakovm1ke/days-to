@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+	--background: #000;
+	--darkColor: #222;
+	--mainColor: #ddbdd5;
+	--placeholder: #777;
+	--invalid: #a64253;
+
+	color: white;
+	font-family: Roboto, sans-serif;
+}
+
+*::selection {
+	background-color: var(--mainColor);
+}

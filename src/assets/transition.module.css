@@ -1,0 +1,14 @@
+.transition {
+	animation-duration: 400ms;
+	animation-name: transition;
+}
+
+@keyframes transition {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,57 @@
+.counter {
+	composes: transition from "@/assets/transition.module.css";
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.header {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.name {
+	display: flex;
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: var(--mainColor);
+	border-radius: 0 0 8px 8px;
+	color: var(--background);
+	font-size: 1.2em;
+	gap: 10px;
+}
+
+.timer {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 10px;
+}
+
+.block {
+	display: flex;
+	min-width: 100px;
+	box-sizing: border-box;
+	flex-basis: 100px;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: center;
+	padding: 10px;
+	background-color: var(--darkColor);
+	border-radius: 8px;
+}
+
+.number {
+	color: var(--mainColor);
+	font-size: 2rem;
+}

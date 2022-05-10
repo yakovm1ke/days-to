@@ -1,0 +1,22 @@
+.startMenu {
+	composes: transition from "@/assets/transition.module.css";
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.text {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-self: flex-start;
+	gap: 10px;
+}
+
+.buttons {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: space-between;
+	gap: 10px;
+}

@@ -1,0 +1,19 @@
+.greeting {
+	composes: transition from "@/assets/transition.module.css";
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.title {
+	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: var(--mainColor);
+	border-radius: 8px;
+	color: var(--background);
+	font-size: 6em;
+}
