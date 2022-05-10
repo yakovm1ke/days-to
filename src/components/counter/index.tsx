@@ -51,7 +51,7 @@ export class Counter extends VueComponent<Props> {
 		let newDate = date
 
 		if (!months) {
-			if (daysDifference > 0) differenceInCalendarDays(date, this.currentDate) - 1
+			if (daysDifference > 0) return differenceInCalendarDays(date, this.currentDate) - 1
 			return differenceInCalendarDays(date, this.currentDate)
 		}
 
@@ -61,7 +61,7 @@ export class Counter extends VueComponent<Props> {
 			newDate = new Date(this.currentDate.getUTCFullYear(), this.currentDate.getMonth() + 1, date.getDate())
 		}
 
-		if (daysDifference > 0) differenceInCalendarDays(newDate, this.currentDate) - 1
+		if (daysDifference > 0) return differenceInCalendarDays(newDate, this.currentDate) - 1
 		return differenceInCalendarDays(newDate, this.currentDate)
 	}
 
