@@ -38,7 +38,7 @@ export class InputDate extends VueComponent<Props> {
 
 	get dateMask() {
 		return {
-			mask: 'Dd/Mm/####',
+			mask: 'Dd/Mm/###y',
 			tokens: {
 				'D': {pattern: /([0-3])/},
 				'd': {pattern: (
@@ -50,6 +50,7 @@ export class InputDate extends VueComponent<Props> {
 				)},
 				'M': {pattern: /([01])/},
 				'm': {pattern: this.dateString[3] !== '1' ? /[1-9]/ : /[0-2]/},
+				'y': {pattern: /[1-9]/},
 				'#': {pattern: /\d/}
 			}
 		}
